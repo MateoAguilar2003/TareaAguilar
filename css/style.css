@@ -8,48 +8,56 @@
 
 /* Body index */
 
- .bodyIndex {
+.bodyIndex {
     height: 100vh;
-    width: 100vw;
+    width: 100vw; 
     font-family: 'PT Serif', serif;
     background-image: url(https://www.anaitgames.com/wp-content/uploads/2022/02/mfm_bloodborne_1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-rows: .5fr repeat(3, 1fr) .5fr;
+    grid-template-rows: .5fr repeat(3, 1fr) .2fr;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:"heaIn heaIn heaIn"
                         "maiIn maiIn maiIn"
                         "maiIn maiIn maiIn"
                         "maiIn maiIn maiIn"
-                        "fooIn fooIn fooIn"
-    }
+                        "fooIn fooIn fooIn";
+}
 
-/* .bodyIndex {
-    height: 100vh;
-    width: 100vw;
-    font-family: 'PT Serif', serif;
-    background-image: url(https://www.anaitgames.com/wp-content/uploads/2022/02/mfm_bloodborne_1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
+
 
 /* Headers*/
 
 .header {
-    border: 5px double aliceblue;
     color: aliceblue;
+    border-bottom: 5px double aliceblue;
     margin: 0px;
     grid-area: heaIn;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:"div nav nav" ;
+}
+
+.divHeader {
+    grid-area: div;
 }
 
 .bloodborneFanPage {
     font-size: 3rem;
 }
 
+.subtitulo {
+    font-size: 2rem;
+    margin-left: 10px;
+    border: 2px solid aliceblue;
+}
+
 .nav {
-    width: 50%;
-    float: right;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    grid-area: nav;
 }
 
 /* Barra de navegacion */
@@ -81,36 +89,24 @@ nav ul li a {
 
  .mainIndex {
     grid-area: maiIn;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:"texIn texIn fotIn"
-                        "texIn texIn vidIn";
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
-.textIndex{
-    grid-area: texIn;
-}
-
-.h2{
+.h2 {
     text-align: center;
     color: aliceblue;
 }
 
-.pIndex{
+.pIndex {
     color: aliceblue;
     text-align: center;
 }
 
-.fotoIndex1 {
-    background-image: url(https://image.api.playstation.com/vulcan/img/rnd/202010/2614/KKLEVc2SIIgrFVjsZChZJk1d.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-area: fotIn;
-}
-
-.videoIndex1{
-    grid-area: vidIn;
+.videoIndex1 {
+    width: 40%;
+    height: 40%;
 }
 
 .iframeIndex {
@@ -122,54 +118,31 @@ nav ul li a {
 
 .footer {
     color: aliceblue;
-    border: 5px double aliceblue;
     grid-area: fooIn;
+    border-top: 5px double aliceblue;
 }
 
 .footerText{
     width: 50%;
     float: left;
+    grid-area: fooTex;
 }
 
 .navRedes {
     text-align: center;
     float: right;
-    size-adjust: 50px;
     width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    grid-area: navRed;
 }
 
-.instagramLi {
+.redesLi {
     padding: 0px;
 }
 
-.instagram {
-    width: 3vw;
-    height: 4vh;
-}
-
-.twitterLi {
-    padding: 0px;
-}
-
-.twitter {
-    width: 3vw;
-    height: 4vh;
-}
-
-.redditLi {
-    padding: 0px;
-}
-
-.reddit {
-    width: 3vw;
-    height: 4vh;
-}
-
-.facebookLi{
-    padding: 0px;
-}
-
-.facebook{
+.redes {
     width: 3vw;
     height: 4vh;
 }
@@ -186,10 +159,10 @@ nav ul li a {
 }
 
 .fieldsetContacto {
-    height: 82vh;
     border-style: none;
     font-size: 2rem;
     color: aliceblue;
+    grid-area: field;
 }
 
 .legendContacto {
@@ -211,20 +184,31 @@ select {
     background-image: url(https://wallpaper.dog/large/5526667.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 150vh;
     width: 100vw;
     font-family: 'PT Serif', serif; 
     color: aliceblue;
+    display: grid;
+    grid-template-rows: .5fr repeat(3, 1fr) .2fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:"heaIn"
+                        "maiGu"
+                        "maiGu"
+                        "maiGu"
+                        "fooIn";
 }
 
-.main {
-    height: 82vh;
-    width: 100vw;
+.mainGuia {
+    grid-area: maiGu;
+    display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:"table1"
+                            "table2";
 }
 
 .divGuia1 {
-    width: 50%;
-    float: left;
+    grid-area: table1;
 }
 
 .tableGuia {
@@ -234,8 +218,7 @@ select {
 }
 
 .divGuia2 {
-    width: 50%;
-    float: right;
+    grid-area: table2;
 }
 
 .tableGuia2 {
@@ -246,24 +229,33 @@ select {
 
 /* historia */
 
-.subtitulo {
-    font-size: 2rem;
-    margin-left: 10px;
-    border: 2px solid aliceblue;
-}
 
 .bodyHistoria {
     background-image: url(https://i.pinimg.com/originals/1d/f5/0d/1df50de3da5d31906ec40f7778ec6150.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 225vh;
     width: 100vw;
     font-family: 'PT Serif', serif; 
     color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5 fr repeat(3, 1fr) .2fr;
+    grid-template-areas:"heaIn"
+                        "maiHi"
+                        "maiHi"
+                        "maiHi"
+                        "fooIn";
 }
 
 .mainHistoria {
     height: 200vh;
+    grid-area: maiHi;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:"diH1 vidHi1"
+                        "diH2 vidHi2";
 }
 
 .titulosHistoria {
@@ -272,23 +264,29 @@ select {
 }
 
 .divHistoria1 {
-    width: 50%;
-    float: left;
+   grid-area: diH1;
 }
 
 .divHistoria2 {
-    width: 50%;
-    float: right;
+    grid-area: diH2;
 }
 
 .videoHistoria1 {
     margin-left: 150px;
     margin-top: 50px;
+    grid-area: vidHi1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
 .videoHistoria2 {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 150px;
+    grid-area: vidHi2;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
 /* Noticias */
@@ -301,20 +299,31 @@ select {
     width: 100vw;
     font-family: 'PT Serif', serif; 
     color: aliceblue;
+    display: grid;
+    grid-template-rows: .5fr repeat(3, 1fr) .2fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:"heaIn heaIn heaIn"
+                        "maiIn maiIn maiIn"
+                        "maiIn maiIn maiIn"
+                        "maiIn maiIn maiIn"
+                        "fooIn fooIn fooIn" ;
+}
+
+.mainNoticias {
+    grid-area: maiIn;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .divNoticias {
     font-size: 2rem;
     width: 45%;
-    float: left;
-    margin-left: 2.5%;
 }
 
 .divNoticias2{
     font-size: 2rem;
     width: 45%;
-    float: right;
-    margin-right: 2.5%;
 }
 
 .divNoticiasPresentacion {
@@ -327,3 +336,157 @@ select {
     color: aliceblue;
 }
 
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .bodyIndex {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150vh;
+        grid-template-rows: .5 fr repeat(3, 1fr) .2fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:"heaIn heaIn"
+                            "maiIn maiIn"
+                            "maiIn maiIn"
+                            "maiIn maiIn"
+                            "fooIn fooIn";
+    }
+
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:"div"
+                            "nav";
+    }
+
+    .videoIndex1{
+        width: 85%;
+        height: 30%;
+    }
+
+    .footer {
+        font-size: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:"fooTex"
+                            "navRed";
+    }
+
+    .footerText{
+        width: 100%;
+    }
+
+    .navRedes {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+
+    .bodyNoticias {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 125vh;
+        grid-template-rows: .5fr repeat(3, 1fr) .2fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:"heaIn heaIn"
+                            "maiIn maiIn"
+                            "maiIn maiIn"
+                            "maiIn maiIn"
+                            "fooIn fooIn" ;
+    }
+
+    .bodyContacto {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 115vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr repeat(3, 1fr) .2fr;
+        grid-template-areas:"heaIn"
+                            "field"
+                            "field"
+                            "field"
+                            "fooIn";
+    }
+
+    .bodyGuia {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: .5fr repeat(3, 1fr) .2fr;
+        grid-template-areas:"heaIn"
+                            "maiGu"
+                            "maiGu"
+                            "maiGu"
+                            "fooIn";
+    }
+
+    .mainGuia {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:"table1"
+                            "table2";
+    }
+
+    .bodyHistoria {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 325vh;
+    }
+
+    .mainHistoria {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);  
+        grid-template-areas:"diH1"
+                            "vidHi1"
+                            "diH2"
+                            "vidHi2";
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .bodyIndex {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 220vh;
+        grid-template-columns: 1fr;
+        grid-template-areas:"heaIn"
+                            "maiIn"
+                            "maiIn"
+                            "maiIn"
+                            "fooIn";
+    }
+
+    .bodyNoticias {
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:"heaIn"
+                            "maiIn"
+                            "maiIn"
+                            "maiIn"
+                            "fooIn" ;
+    }
+
+    .bodyContacto {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 145vh;
+    }
+
+    .bodyHistoria {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 375vh;
+    }
+
+}
