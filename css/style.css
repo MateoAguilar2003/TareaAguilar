@@ -30,6 +30,9 @@
 /* Headers*/
 
 .header {
+    animation-name: animacion;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
     color: aliceblue;
     border-bottom: 5px double aliceblue;
     margin: 0px;
@@ -38,6 +41,28 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:"div nav nav" ;
 }
+
+@keyframes animacion {
+    0%{
+        background-color: rgba(0,0,0,1);
+    }
+
+    25%{
+        background-color: rgba(34,34,34,1);
+    }
+
+    50%{
+        background-color: rgba(117,117,117,1);
+    }
+
+    75%{
+        background-color: rgba(34,34,34,1);
+    }
+
+    100%{
+        background-color: rgba(0,0,0,1);
+    }
+} 
 
 .divHeader {
     grid-area: div;
@@ -107,6 +132,8 @@ nav ul li a {
 .videoIndex1 {
     width: 40%;
     height: 40%;
+    transform: translate(450px);
+    transition: transform 5s;
 }
 
 .iframeIndex {
@@ -117,9 +144,37 @@ nav ul li a {
 /* Footers*/
 
 .footer {
+    animation-name: animacion2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
     color: aliceblue;
     grid-area: fooIn;
     border-top: 5px double aliceblue;
+    
+}
+
+@keyframes animacion2 {
+
+    0%{
+        background-color: rgba(117,117,117,1);
+    }
+
+    25%{
+        background-color: rgba(34,34,34,1);
+    }
+
+    50%{
+        background-color: rgba(0,0,0,1);
+    }
+
+    75%{
+        background-color: rgba(34,34,34,1);
+    }
+
+    100%{
+        background-color: rgba(117,117,117,1);
+    }
+
 }
 
 .footerText{
@@ -321,6 +376,7 @@ select {
     width: 45%;
 }
 
+
 .divNoticias2{
     font-size: 2rem;
     width: 45%;
@@ -329,6 +385,14 @@ select {
 .divNoticiasPresentacion {
     border: 5px double aliceblue;
     margin-top: 10px;
+    perspective: 2500;
+    transition: 1s ease;
+}
+
+.divNoticiasPresentacion:hover {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(99,99,99,1) 50%, rgba(0,0,0,1) 100%);
+    transform: rotatey(360deg);
 }
 
 .noticias {
