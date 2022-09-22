@@ -4,114 +4,12 @@
     box-sizing: border-box;
 }
 
-/* Index */
-
-/* Body index */
-
-/* .bodyIndex {
-    height: 100vh;
-    width: 100vw; 
-    font-family: 'PT Serif', serif;
-    background-image: url(https://www.anaitgames.com/wp-content/uploads/2022/02/mfm_bloodborne_1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-rows: .5fr repeat(3, 1fr) .2fr;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:"heaIn heaIn heaIn"
-                        "maiIn maiIn maiIn"
-                        "maiIn maiIn maiIn"
-                        "maiIn maiIn maiIn"
-                        "fooIn fooIn fooIn";
-} */
-
-
-
 /* Headers*/
 
 .headerBFP {
     background: rgb(0,0,0) !important;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(71,71,71,1) 25%, rgba(82,82,82,1) 50%, rgba(71,71,71,1) 75%, rgba(0,0,0,1) 100%) !important;
 }
-
-/* .header {
-    animation-name: animacion;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    color: aliceblue;
-    border-bottom: 5px double aliceblue;
-    margin: 0px;
-    grid-area: heaIn;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:"div nav nav" ;
-} */
-
-/* @keyframes animacion {
-    0%{
-        background-color: rgba(0,0,0,1);
-    }
-
-    25%{
-        background-color: rgba(34,34,34,1);
-    }
-
-    50%{
-        background-color: rgba(117,117,117,1);
-    }
-
-    75%{
-        background-color: rgba(34,34,34,1);
-    }
-
-    100%{
-        background-color: rgba(0,0,0,1);
-    }
-}  */
-
-/* .divHeader {
-    grid-area: div;
-}
-
-.bloodborneFanPage {
-    font-size: 3rem;
-}
-
-.subtitulo {
-    font-size: 2rem;
-    margin-left: 10px;
-    border: 2px solid aliceblue;
-}
-
-.nav {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    grid-area: nav;
-} */
-
-/* Barra de navegacion */
-
-/* nav ul {
-    
-    text-align: right;
-}
-
-nav ul li  {
-    font-size: 1.5rem;
-    display: inline-block;
-    background-color: black;
-    padding: 10px;
-    margin-top: 5px;
-    border: 2px solid whitesmoke;
-    border-radius: 5px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: aliceblue;
-    
-} */
 
 /* Main index*/
 
@@ -121,35 +19,6 @@ nav ul li a {
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(71,71,71,1) 25%, rgba(82,82,82,1) 50%, rgba(71,71,71,1) 75%, rgba(0,0,0,1) 100%);
 }
 
- /* .mainIndex {
-    grid-area: maiIn;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-
-.h2 {
-    text-align: center;
-    color: aliceblue;
-}
-
-.pIndex {
-    color: aliceblue;
-    text-align: center;
-}
-
-.videoIndex1 {
-    width: 40%;
-    height: 40%;
-    transform: translate(450px);
-    transition: transform 5s;
-}
-
-.iframeIndex {
-    width: 100%;
-    height: 100%;
-} */
-
 /* Footers*/
 
 .footerBFP {
@@ -157,210 +26,43 @@ nav ul li a {
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(71,71,71,1) 25%, rgba(82,82,82,1) 50%, rgba(71,71,71,1) 75%, rgba(0,0,0,1) 100%) !important;
 }
 
-/* .footer {
-    animation-name: animacion2;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    color: aliceblue;
-    grid-area: fooIn;
-    border-top: 5px double aliceblue;
-    
-}
-
-@keyframes animacion2 {
-
-    0%{
-        background-color: rgba(117,117,117,1);
-    }
-
-    25%{
-        background-color: rgba(34,34,34,1);
-    }
-
-    50%{
-        background-color: rgba(0,0,0,1);
-    }
-
-    75%{
-        background-color: rgba(34,34,34,1);
-    }
-
-    100%{
-        background-color: rgba(117,117,117,1);
-    }
-
-}
-
-.footerText{
-    width: 50%;
-    float: left;
-    grid-area: fooTex;
-}
-
-.navRedes {
-    text-align: center;
-    float: right;
-    width: 50%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    grid-area: navRed;
-}
-
-.redesLi {
-    padding: 0px;
-}
-
-.redes {
-    width: 3vw;
-    height: 4vh;
-} */
-
 /* Contacto */
 
-.bodyContacto {
-    background-image: url(https://images7.alphacoders.com/591/591728.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    font-family: 'PT Serif', serif;
+.mainContactoBFP {
+    background: rgb(0,0,0) !important;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(71,71,71,1) 25%, rgba(82,82,82,1) 50%, rgba(71,71,71,1) 75%, rgba(0,0,0,1) 100%) !important;
+    color: aliceblue !important;
 }
 
-.fieldsetContacto {
-    border-style: none;
-    font-size: 2rem;
-    color: aliceblue;
-    grid-area: field;
-}
-
-.legendContacto {
-    text-decoration: underline;
-    text-align: center;
+.listContacto {
+    list-style: none;
 }
 
 input {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 select {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* Guia */
 
-.bodyGuia {
-    background-image: url(https://wallpaper.dog/large/5526667.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 150vh;
-    width: 100vw;
-    font-family: 'PT Serif', serif; 
-    color: aliceblue;
-    display: grid;
-    grid-template-rows: .5fr repeat(3, 1fr) .2fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:"heaIn"
-                        "maiGu"
-                        "maiGu"
-                        "maiGu"
-                        "fooIn";
-}
-
-.mainGuia {
-    grid-area: maiGu;
-    display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:"table1"
-                            "table2";
-}
-
-.divGuia1 {
-    grid-area: table1;
-}
-
-.tableGuia {
-    border: 5px double aliceblue;
-    height: 200px;
-    width: 700px;
-}
-
-.divGuia2 {
-    grid-area: table2;
-}
-
-.tableGuia2 {
-    border: 5px double aliceblue;
-    height: 200px;
-    width: 700px;
+.mainGuiaBFP {
+    background: rgb(0,0,0) !important;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(71,71,71,1) 25%, rgba(82,82,82,1) 50%, rgba(71,71,71,1) 75%, rgba(0,0,0,1) 100%) !important;
+    color: aliceblue !important;
 }
 
 /* historia */
 
-
-.bodyHistoria {
-    background-image: url(https://i.pinimg.com/originals/1d/f5/0d/1df50de3da5d31906ec40f7778ec6150.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 225vh;
-    width: 100vw;
-    font-family: 'PT Serif', serif; 
-    color: aliceblue;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .5 fr repeat(3, 1fr) .2fr;
-    grid-template-areas:"heaIn"
-                        "maiHi"
-                        "maiHi"
-                        "maiHi"
-                        "fooIn";
-}
-
-.mainHistoria {
-    height: 200vh;
-    grid-area: maiHi;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:"diH1 vidHi1"
-                        "diH2 vidHi2";
-}
-
-.titulosHistoria {
-    font-size: 2rem;
-    text-decoration: underline;
-}
-
-.divHistoria1 {
-   grid-area: diH1;
-}
-
-.divHistoria2 {
-    grid-area: diH2;
-}
-
-.videoHistoria1 {
-    margin-left: 150px;
-    margin-top: 50px;
-    grid-area: vidHi1;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
-
-.videoHistoria2 {
-    margin-top: 150px;
-    margin-left: 150px;
-    grid-area: vidHi2;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+.mainHistoriaBFP {
+    background: rgb(0,0,0) !important;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(71,71,71,1) 25%, rgba(82,82,82,1) 50%, rgba(71,71,71,1) 75%, rgba(0,0,0,1) 100%) !important;
+    color: aliceblue !important;
 }
 
 /* Noticias */
-
-
 
 #mainNoticias {
     height: 81.8vh;
@@ -382,215 +84,4 @@ select {
     background: rgb(0,0,0) !important;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(99,99,99,1) 50%, rgba(0,0,0,1) 100%) !important;
     transform: rotatey(360deg) !important;
-}
-
-/* .bodyNoticias {
-    background-image: url(https://c.wallhere.com/photos/a1/37/Bloodborne_Play_Station-1471265.jpg!d);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    font-family: 'PT Serif', serif; 
-    color: aliceblue;
-    display: grid;
-    grid-template-rows: .5fr repeat(3, 1fr) .2fr;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:"heaIn heaIn heaIn"
-                        "maiIn maiIn maiIn"
-                        "maiIn maiIn maiIn"
-                        "maiIn maiIn maiIn"
-                        "fooIn fooIn fooIn" ;
-}
-
-.mainNoticias {
-    grid-area: maiIn;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-
-.divNoticias {
-    font-size: 2rem;
-    width: 45%;
-}
-
-
-.divNoticias2{
-    font-size: 2rem;
-    width: 45%;
-}
-
-.divNoticiasPresentacion {
-    border: 5px double aliceblue;
-    margin-top: 10px;
-    perspective: 2500;
-    transition: 1s ease;
-}
-
-.divNoticiasPresentacion:hover {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(99,99,99,1) 50%, rgba(0,0,0,1) 100%);
-    transform: rotatey(360deg);
-}
-
-.noticias {
-    text-decoration: none;
-    color: aliceblue;
-} */
-
-/* Media querys */
-
-@media only screen and (max-width: 1200px) {
-
-}
-
-@media only screen and (max-width: 768px) {
-
-    /* .bodyIndex {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 150vh;
-        grid-template-rows: .5 fr repeat(3, 1fr) .2fr;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:"heaIn heaIn"
-                            "maiIn maiIn"
-                            "maiIn maiIn"
-                            "maiIn maiIn"
-                            "fooIn fooIn";
-    }
-
-    .header {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:"div"
-                            "nav";
-    }
-
-    .videoIndex1{
-        width: 85%;
-        height: 30%;
-    }
-
-    .footer {
-        font-size: 1.5rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:"fooTex"
-                            "navRed";
-    }
-
-    .footerText{
-        width: 100%;
-    }
-
-    .navRedes {
-        width: 100%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-    }
-
-    .bodyNoticias {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 125vh;
-        grid-template-rows: .5fr repeat(3, 1fr) .2fr;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:"heaIn heaIn"
-                            "maiIn maiIn"
-                            "maiIn maiIn"
-                            "maiIn maiIn"
-                            "fooIn fooIn" ;
-    } */
-
-    .bodyContacto {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 115vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: .5fr repeat(3, 1fr) .2fr;
-        grid-template-areas:"heaIn"
-                            "field"
-                            "field"
-                            "field"
-                            "fooIn";
-    }
-
-    .bodyGuia {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 150vh;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: .5fr repeat(3, 1fr) .2fr;
-        grid-template-areas:"heaIn"
-                            "maiGu"
-                            "maiGu"
-                            "maiGu"
-                            "fooIn";
-    }
-
-    .mainGuia {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:"table1"
-                            "table2";
-    }
-
-    .bodyHistoria {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 325vh;
-    }
-
-    .mainHistoria {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);  
-        grid-template-areas:"diH1"
-                            "vidHi1"
-                            "diH2"
-                            "vidHi2";
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    
-    /* .bodyIndex {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 220vh;
-        grid-template-columns: 1fr;
-        grid-template-areas:"heaIn"
-                            "maiIn"
-                            "maiIn"
-                            "maiIn"
-                            "fooIn";
-    }
-
-    .bodyNoticias {
-        background-size: cover;
-        background-repeat: no-repeat;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas:"heaIn"
-                            "maiIn"
-                            "maiIn"
-                            "maiIn"
-                            "fooIn" ;
-    } */
-
-    .bodyContacto {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 145vh;
-    }
-
-    .bodyHistoria {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 375vh;
-    }
-
 }
