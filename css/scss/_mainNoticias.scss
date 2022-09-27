@@ -1,0 +1,18 @@
+#mainNoticias {
+    height: 81.8vh;
+    color: $fontColor1  !important;
+    background: $gradient1 !important;
+    background: $gradient2 !important;
+    .text-decoration-none{
+        color: $fontColor1 !important;
+        .divNoticias{
+            perspective: 2500 !important;
+            transition: 1s ease !important;
+            .divNoticias:hover {
+                background: $gradient3 !important;
+                background: $gradient4 !important;
+                transform: rotatey(360deg) !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.mainContactoBFP {
+    background: $gradient1 !important;
+    background: $gradient2 !important;
+    color: $fontColor1 !important;
+        .listContacto {
+            list-style: none;
+            input {
+                font-size: $fontSize1;
+                select {
+                    font-size: $fontSize1;
+                }
+            }
+        }
+}
