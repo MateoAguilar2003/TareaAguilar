@@ -1,14 +1,14 @@
 .mainContactoBFP {
-    background: $gradient1 !important;
-    background: $gradient2 !important;
-    color: $fontColor1 !important;
+    background: map-get($gradientes, "negro") !important;
+    background: map-get($gradientes, "gradiente1") !important;
+    color: $fontColor1;
         .listContacto {
             list-style: none;
             input {
                 font-size: $fontSize1;
                 select {
                     font-size: $fontSize1;
-                }
             }
         }
+    }
 }

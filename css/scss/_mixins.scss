@@ -1,0 +1,4 @@
+@mixin bgColor($gradient1, $gradient2) {
+    background: $gradient1 !important;
+    background: $gradient2 !important;
+}

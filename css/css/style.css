@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .headerBFP {
   background: rgb(0, 0, 0) !important;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
@@ -11,17 +18,17 @@
 }
 
 #mainIndex {
-  color: aliceblue !important;
   background: rgb(0, 0, 0) !important;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
+  color: aliceblue;
 }
 
 .mainContactoBFP {
   background: rgb(0, 0, 0) !important;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
-  color: aliceblue !important;
+  color: aliceblue;
 }
 .mainContactoBFP .listContacto {
   list-style: none;
@@ -34,46 +41,35 @@
 }
 
 .mainGuiaBFP {
-  color: aliceblue !important;
   background: rgb(0, 0, 0) !important;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
+  color: aliceblue;
 }
 
 .mainHistoriaBFP {
-  color: aliceblue !important;
   background: rgb(0, 0, 0) !important;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
+  color: aliceblue;
 }
 
 #mainNoticias {
   height: 81.8vh;
-  color: aliceblue !important;
   background: rgb(0, 0, 0) !important;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
 }
 #mainNoticias .text-decoration-none {
-  color: aliceblue !important;
+  color: firebrick;
 }
-#mainNoticias .text-decoration-none .divNoticias {
-  -webkit-perspective: 2500 !important;
-          perspective: 2500 !important;
-  -webkit-transition: 1s ease !important;
-  transition: 1s ease !important;
-}
-#mainNoticias .text-decoration-none .divNoticias .divNoticias:hover {
+#mainNoticias .divNoticias, #mainNoticias .divNoticias2 {
   background: rgb(0, 0, 0) !important;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(50%, rgb(99, 99, 99)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(99, 99, 99) 50%, rgb(0, 0, 0) 100%) !important;
-  -webkit-transform: rotatey(360deg) !important;
-          transform: rotatey(360deg) !important;
+  border: 2px double firebrick;
+  border-radius: 5px;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+#mainNoticias .divNoticias2 {
+  border: 5px dotted blue;
 }

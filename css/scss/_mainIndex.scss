@@ -1,5 +1,4 @@
 #mainIndex{ 
-    color: $fontColor1  !important;
-    background: $gradient1 !important;
-    background: $gradient2 !important;
+    @include bgColor($gradient1, $gradient2);
+    color: $fontColor1;
 }

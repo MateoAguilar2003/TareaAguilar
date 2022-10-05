@@ -1,4 +1,4 @@
 .footerBFP {
-    background: $gradient1 !important;
-    background: $gradient2 !important;
+    background: map-get($gradientes, "negro") !important;
+    background: map-get($gradientes, "gradiente1") !important;
 }

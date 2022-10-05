@@ -3,6 +3,11 @@ $fontSize2: 2rem;
 
 $fontColor1: aliceblue;
 
+$gradientes:(
+    "negro": rgb(0,0,0),
+    "gradiente1": linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(71,71,71,1) 25%, rgba(82,82,82,1) 50%, rgba(71,71,71,1) 75%, rgba(0,0,0,1) 100%)
+);
+
 $gradient1: rgb(0,0,0);
 $gradient2: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(71,71,71,1) 25%, rgba(82,82,82,1) 50%, rgba(71,71,71,1) 75%, rgba(0,0,0,1) 100%); 
 
