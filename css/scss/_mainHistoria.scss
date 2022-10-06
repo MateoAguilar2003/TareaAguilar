@@ -1,4 +1,8 @@
 .mainHistoriaBFP {
     @include bgColor($gradient1, $gradient2);
     color: $fontColor1;
+    font-family: 'PT Serif', serif;
+    .videoHistoria{
+        margin: 3vh;
+    }
 }

@@ -2,6 +2,8 @@
     background: map-get($gradientes, "negro") !important;
     background: map-get($gradientes, "gradiente1") !important;
     color: $fontColor1;
+    font-family: 'PT Serif', serif;
+    height: 85vh;
         .listContacto {
             list-style: none;
             input {

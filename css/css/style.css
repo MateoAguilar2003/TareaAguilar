@@ -6,15 +6,19 @@
 }
 
 .headerBFP {
-  background: rgb(0, 0, 0) !important;
-  background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
+  font-family: "PT Serif", serif;
+  background-image: url(../images/bloodborneartwork.webp) !important;
+  height: 10vh;
+}
+.headerBFP .tituloBFP {
+  color: aliceblue !important;
+  font-size: 2rem;
 }
 
 .footerBFP {
-  background: rgb(0, 0, 0) !important;
-  background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
+  background-image: url(../images/old-cobble-stone-road-dark-surface-background-texture_1101-2286.webp);
+  background-size: cover;
+  height: 10vh;
 }
 
 #mainIndex {
@@ -22,6 +26,10 @@
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
   color: aliceblue;
+  font-family: "PT Serif", serif;
+}
+#mainIndex .videoIndex1 {
+  margin: 3vh;
 }
 
 .mainContactoBFP {
@@ -29,6 +37,8 @@
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
   color: aliceblue;
+  font-family: "PT Serif", serif;
+  height: 85vh;
 }
 .mainContactoBFP .listContacto {
   list-style: none;
@@ -45,6 +55,11 @@
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
   color: aliceblue;
+  font-family: "PT Serif", serif;
+}
+.mainGuiaBFP .tableBFP {
+  background-color: rgb(125, 38, 38);
+  margin: 3vh;
 }
 
 .mainHistoriaBFP {
@@ -52,24 +67,21 @@
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
   color: aliceblue;
+  font-family: "PT Serif", serif;
+}
+.mainHistoriaBFP .videoHistoria {
+  margin: 3vh;
 }
 
 #mainNoticias {
-  height: 81.8vh;
   background: rgb(0, 0, 0) !important;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
+  height: 81.8vh;
+  font-family: "PT Serif", serif;
 }
-#mainNoticias .text-decoration-none {
-  color: firebrick;
-}
-#mainNoticias .divNoticias, #mainNoticias .divNoticias2 {
-  background: rgb(0, 0, 0) !important;
-  background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(50%, rgb(99, 99, 99)), to(rgb(0, 0, 0))) !important;
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(99, 99, 99) 50%, rgb(0, 0, 0) 100%) !important;
-  border: 2px double firebrick;
-  border-radius: 5px;
-}
-#mainNoticias .divNoticias2 {
-  border: 5px dotted blue;
+#mainNoticias .cardBFP {
+  margin-top: 2vh;
+  background-color: black;
+  color: aliceblue;
 }

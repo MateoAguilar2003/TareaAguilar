@@ -1,4 +1,9 @@
 .headerBFP {
-    background: map-get($gradientes, "negro") !important;
-    background: map-get($gradientes, "gradiente1") !important;
+    font-family: 'PT Serif', serif;
+    background-image: url(../images/bloodborneartwork.webp) !important;
+    height: 10vh;
+    .tituloBFP{
+        color: aliceblue !important;
+        font-size: $fontSize2;
+    }
 }

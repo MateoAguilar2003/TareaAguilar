@@ -1,4 +1,5 @@
 .footerBFP {
-    background: map-get($gradientes, "negro") !important;
-    background: map-get($gradientes, "gradiente1") !important;
+    background-image: url(../images/old-cobble-stone-road-dark-surface-background-texture_1101-2286.webp);
+    background-size: cover;
+    height: 10vh;
 }

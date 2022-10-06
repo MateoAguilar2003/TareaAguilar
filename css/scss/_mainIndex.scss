@@ -1,4 +1,8 @@
 #mainIndex{ 
     @include bgColor($gradient1, $gradient2);
     color: $fontColor1;
+    font-family: 'PT Serif', serif;
+    .videoIndex1{
+        margin: 3vh;
+    }
 }

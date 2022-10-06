@@ -1,4 +1,9 @@
 .mainGuiaBFP {
     @include bgColor($gradient1, $gradient2);
     color: $fontColor1;
+    font-family: 'PT Serif', serif;
+    .tableBFP {
+        background-color: rgb(125,38,38,1);
+        margin: 3vh;
+    }
 }

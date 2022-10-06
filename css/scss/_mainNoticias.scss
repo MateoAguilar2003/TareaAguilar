@@ -1,18 +1,11 @@
 #mainNoticias {
-    height: 81.8vh;
     @include bgColor($gradient1, $gradient2);
-    .text-decoration-none{
-        color: firebrick;
-    }
-        .divNoticias{
-            background: $gradient3 !important;
-            background: $gradient4 !important;
-            border: 2px double firebrick;
-            border-radius: 5px;
-    }
-        .divNoticias2{
-            @extend .divNoticias;
-            border: 5px dotted blue;
+    height: 81.8vh;
+    font-family: 'PT Serif', serif;
+    .cardBFP {
+        margin-top: 2vh;
+        background-color: black;
+        color: aliceblue;
     }
 }
 
