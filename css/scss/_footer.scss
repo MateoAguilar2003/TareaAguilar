@@ -1,5 +1,8 @@
 .footerBFP {
-    background-image: url(../images/old-cobble-stone-road-dark-surface-background-texture_1101-2286.webp);
-    background-size: cover;
+    background-color: $bgFooHea;
     height: 10vh;
+    .navRedes {
+        border: solid $dangerBoots 2px;
+        border-radius: 50px;
+    }
 }

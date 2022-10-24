@@ -1,9 +1,18 @@
 .headerBFP {
     font-family: 'PT Serif', serif;
-    background-image: url(../images/bloodborneartwork.webp) !important;
+    background-color: $bgFooHea;
     height: 10vh;
-    .tituloBFP{
-        color: aliceblue !important;
-        font-size: $fontSize2;
+    
+    .navbarBFP {
+        background-color: $bgFooHea ;
+        .tituloBFP {
+        text-decoration: underline double $dangerBoots !important;
     }
+        .liBFP{
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    }
+    
 }

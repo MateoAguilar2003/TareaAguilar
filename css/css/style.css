@@ -7,18 +7,29 @@
 
 .headerBFP {
   font-family: "PT Serif", serif;
-  background-image: url(../images/bloodborneartwork.webp) !important;
+  background-color: rgb(36, 36, 36);
   height: 10vh;
 }
-.headerBFP .tituloBFP {
-  color: aliceblue !important;
-  font-size: 2rem;
+.headerBFP .navbarBFP {
+  background-color: rgb(36, 36, 36);
+}
+.headerBFP .navbarBFP .tituloBFP {
+  -webkit-text-decoration: underline double #dc3545 !important;
+          text-decoration: underline double #dc3545 !important;
+}
+.headerBFP .navbarBFP .liBFP {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .footerBFP {
-  background-image: url(../images/old-cobble-stone-road-dark-surface-background-texture_1101-2286.webp);
-  background-size: cover;
+  background-color: rgb(36, 36, 36);
   height: 10vh;
+}
+.footerBFP .navRedes {
+  border: solid #dc3545 2px;
+  border-radius: 50px;
 }
 
 #mainIndex {
