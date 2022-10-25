@@ -1,11 +1,25 @@
 #mainNoticias {
     @include bgColor($gradient1, $gradient2);
-    height: 81.8vh;
     font-family: 'PT Serif', serif;
     .cardBFP {
-        margin-top: 2vh;
-        background-color: black;
-        color: aliceblue;
+        margin: 2vh;
+        background-color: $dangerBoots;
+        color: black;
+        perspective: 2500;
+        transition: width 1s, transform 1s ease;
+        .cardTitle {
+            text-decoration: underline solid 2px !important;
+        }
+        .cardImg {
+        margin-top: 5px;
+        }
+        .btnNoticias:hover {
+            color: $lightBoots !important;
+        }
     }
+    .cardBFP:hover {
+        transform: rotatey(360deg)
+    }
+    
 }
 

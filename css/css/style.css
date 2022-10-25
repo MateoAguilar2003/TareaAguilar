@@ -18,9 +18,7 @@
           text-decoration: underline double #dc3545 !important;
 }
 .headerBFP .navbarBFP .liBFP {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  margin: 5px;
 }
 
 .footerBFP {
@@ -60,6 +58,16 @@
 .mainContactoBFP .listContacto input select {
   font-size: 1rem;
 }
+.mainContactoBFP .spanContacto {
+  margin-top: 5vh;
+  font-size: 2rem;
+}
+.mainContactoBFP .spanContacto2 {
+  margin-top: 5vh;
+  font-size: 2rem;
+  -webkit-text-decoration: underline solid 3px;
+          text-decoration: underline solid 3px;
+}
 
 .mainGuiaBFP {
   background: rgb(0, 0, 0) !important;
@@ -77,22 +85,66 @@
   background: rgb(0, 0, 0) !important;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
-  color: aliceblue;
   font-family: "PT Serif", serif;
 }
-.mainHistoriaBFP .videoHistoria {
-  margin: 3vh;
+.mainHistoriaBFP .textosHistoria {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: #dc3545 !important;
+}
+.mainHistoriaBFP .textosHistoria .accHead {
+  background-color: rgb(36, 36, 36) !important;
+  color: aliceblue;
+}
+.mainHistoriaBFP .textosHistoria .itemHistoria {
+  background-color: #dc3545 !important;
+}
+.mainHistoriaBFP .videosHistoria {
+  margin-bottom: 5vh;
+}
+.mainHistoriaBFP .videosHistoria .iFrameHis {
+  height: 600px;
+}
+.mainHistoriaBFP .videosHistoria .btnCarousel {
+  color: #dc3545 !important;
+}
+.mainHistoriaBFP .videosHistoria .btnCarouselInd {
+  background-color: #dc3545 !important;
 }
 
+@media only screen and (max-width: 800px) {
+  .iFrameHis {
+    height: 300px !important;
+  }
+}
 #mainNoticias {
   background: rgb(0, 0, 0) !important;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(71, 71, 71) 25%, rgb(82, 82, 82) 50%, rgb(71, 71, 71) 75%, rgb(0, 0, 0) 100%) !important;
-  height: 81.8vh;
   font-family: "PT Serif", serif;
 }
 #mainNoticias .cardBFP {
-  margin-top: 2vh;
-  background-color: black;
-  color: aliceblue;
+  margin: 2vh;
+  background-color: #dc3545;
+  color: black;
+  -webkit-perspective: 2500;
+          perspective: 2500;
+  -webkit-transition: width 1s, -webkit-transform 1s ease;
+  transition: width 1s, -webkit-transform 1s ease;
+  transition: width 1s, transform 1s ease;
+  transition: width 1s, transform 1s ease, -webkit-transform 1s ease;
+}
+#mainNoticias .cardBFP .cardTitle {
+  -webkit-text-decoration: underline solid 2px !important;
+          text-decoration: underline solid 2px !important;
+}
+#mainNoticias .cardBFP .cardImg {
+  margin-top: 5px;
+}
+#mainNoticias .cardBFP .btnNoticias:hover {
+  color: #adb5bd !important;
+}
+#mainNoticias .cardBFP:hover {
+  -webkit-transform: rotatey(360deg);
+          transform: rotatey(360deg);
 }

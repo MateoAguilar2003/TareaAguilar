@@ -1,8 +1,36 @@
 .mainHistoriaBFP {
     @include bgColor($gradient1, $gradient2);
-    color: $fontColor1;
     font-family: 'PT Serif', serif;
-    .videoHistoria{
-        margin: 3vh;
+        .textosHistoria {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            background-color: $dangerBoots !important;
+            .accHead {
+                background-color: $bgFooHea !important;
+                color: $fontColor1;
+            }
+            .itemHistoria {
+                background-color: $dangerBoots !important;
+            }
+        }
+        .videosHistoria {
+            margin-bottom: 5vh;
+            .iFrameHis {
+                height: 600px;
+            }
+            .btnCarousel {
+                color: $dangerBoots !important;
+            }
+            .btnCarouselInd {
+                background-color: $dangerBoots !important;
+            }
+        }
+}
+
+// MEDIA QUERYS
+
+@media only screen and (max-width: 800px){
+    .iFrameHis {
+        height: 300px !important;
     }
 }

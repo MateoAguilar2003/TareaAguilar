@@ -13,10 +13,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/css/style.css">
+    <link rel="icon" href="../css/images/icons8-tarjeta-de-contacto-50.webp">
     <title>Comuniquese con nosotros</title>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
 </head>
 
 <body>
+
+<!-- HEADER -->
 
     <header class="header">
 
@@ -49,24 +53,31 @@
 
     </header>   
 
+<!-- MAIN -->
+
     <main class="mainContactoBFP">
         <div class="container text-center">
+
+<!-- FORMULARIO -->
+
             <div class="row">
-                <fieldset class="fieldsetContactoBFP col-12">
+                <fieldset class="fieldsetContactoBFP col-12 d-flex justify-content-center">
 
-                    <legend class="text-decoration-underline">Contacto</legend>
+                    
 
-                    <form method="post">
+                    <form action="mailto:mateoaguilar2003@yahoo.com.ar" method=”POST” enctype=”text/plain” name=”EmailForm”>
+                        <legend class="text-decoration-underline"> Contacto
+                        </legend>
 
                         <ul class="listContacto">
 
-                        <li>Nombre <input placeholder="Nombre" required></li><p></p>
-                        <li>Apellido <input placeholder="Apellido" required></li><p></p>
-                        <li>Email <input placeholder="EmailName@gmail.com" required></li><p></p>
+                        <li>Nombre <input class="btn btn-outline-danger" placeholder="Nombre" required></li><p></p>
+                        <li>Apellido <input class="btn btn-outline-danger" placeholder="Apellido" required></li><p></p>
+                        <li>Email <input class="btn btn-outline-danger" placeholder="EmailName@gmail.com" required></li><p></p>
 
                         Como desea que nos refiramos a usted?<p></p>
 
-                        <select>
+                        <select class="btn btn-outline-danger">
                             <option>Hombre</option>
                             <option>Mujer</option>
                             <option>Otro</option>
@@ -74,19 +85,53 @@
 
                         Desea recibir noticias actualizadas sobre bloodborne? <input type="checkbox"><p></p>
                         <p></p>
-                        Que le esta pareciendo la pagina hasta el momento? denos su opinion<p></p>
-                        <textarea name="textareaContacto" id="textareaContacto" cols="50" rows="5" placeholder="Escriba aqui su opinion"></textarea>
-                        
                         </ul>
 
-                        <input type="submit" value="Enviar">
-                        <Input type="reset" value="Limpiar">
+                        <input class="btn btn-outline-danger" type="submit" value="Enviar">
+                        <Input class="btn btn-outline-danger" type="reset" value="Limpiar">
 
                     </form>
 
                 </fieldset>
 
+            </div>
+
+<!-- MIS REDES SOCIALES -->
+
+            <div class="row">
+
+              <span class="spanContacto">Mis redes sociales
+              </span>
+              <nav class="navbar">
+                <div class="container d-flex justify-content-center">
+                  <a class="navbar-brand" href="https://www.instagram.com/mate_agui_/?hl=es">
+                    <img class="navRedes" src="../css/images/instagram4.webp" alt="instagram" width="50" height="50">
+                  </a>
+                  <a class="navbar-brand" href="https://mobile.twitter.com/darkrabano">
+                    <img class="navRedes" src="../css/images/twitter3.webp" alt="Twitter" width="50" height="50">
+                  </a>
+                  <a class="navbar-brand" href="https://www.facebook.com/mate.agui">
+                    <img class="navRedes" src="../css/images/facebook1.webp" alt="Facebook" width="50" height="50">
+                  </a>
+                </div>
+              </nav>
+
+<!-- REFERENCIAS -->
+
+              <nav class="navbar navbar-dark">
+                <div class="container d-flex justify-content-center">
+                  <a class="navbar-brand spanContacto2" href="https://docs.google.com/document/d/1_OEqNr7W9un0sqY4GhOO4mZnPkFAiY1NGYXGpGDfWp4/edit?usp=sharing">Referencias
+                  </a>
+                </div>
+              </nav>
+
+            </div>
+
+        </div>
+
     </main>
+
+<!-- FOOTER -->
 
     <footer>
 
