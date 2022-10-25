@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -37,10 +37,20 @@
   color: aliceblue;
   font-family: "PT Serif", serif;
 }
-#mainIndex .videoIndex1 {
-  margin: 3vh;
+#mainIndex .textoIndex {
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+#mainIndex .videoIndex {
+  margin-bottom: 3vh;
 }
 
+@media only screen and (max-width: 700px) {
+  .textoIndex {
+    margin-left: 3vh !important;
+    margin-right: 3vh !important;
+  }
+}
 .mainContactoBFP {
   background: rgb(0, 0, 0) !important;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;
@@ -76,11 +86,28 @@
   color: aliceblue;
   font-family: "PT Serif", serif;
 }
-.mainGuiaBFP .tableBFP {
-  background-color: rgb(125, 38, 38);
-  margin: 3vh;
+.mainGuiaBFP .divGuia {
+  border-right: solid #adb5bd 1.5px;
+}
+.mainGuiaBFP .divGuia .navGuia {
+  position: sticky !important;
+  top: 15vh !important;
+}
+.mainGuiaBFP .divGuia .navGuia .btnGuia {
+  color: #adb5bd;
+  margin-top: 3vh;
+}
+.mainGuiaBFP .textoGuia {
+  margin-left: 10vh;
+  margin-right: 10vh;
 }
 
+@media only screen and (max-width: 700px) {
+  .textoGuia {
+    margin-left: 3vh !important;
+    margin-right: 3vh !important;
+  }
+}
 .mainHistoriaBFP {
   background: rgb(0, 0, 0) !important;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(25%, rgb(71, 71, 71)), color-stop(50%, rgb(82, 82, 82)), color-stop(75%, rgb(71, 71, 71)), to(rgb(0, 0, 0))) !important;

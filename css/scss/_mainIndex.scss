@@ -2,7 +2,16 @@
     @include bgColor($gradient1, $gradient2);
     color: $fontColor1;
     font-family: 'PT Serif', serif;
-    .videoIndex1{
-        margin: 3vh;
+    .textoIndex {
+        @include textMargin;
     }
+    .videoIndex {
+        margin-bottom: 3vh; 
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .textoIndex {
+        @include textMarginQuery;
+    }    
 }

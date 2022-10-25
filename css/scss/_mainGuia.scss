@@ -2,8 +2,24 @@
     @include bgColor($gradient1, $gradient2);
     color: $fontColor1;
     font-family: 'PT Serif', serif;
-    .tableBFP {
-        background-color: rgb(125,38,38,1);
-        margin: 3vh;
+    .divGuia {
+        border-right: solid $lightBoots 1.5px;
+        .navGuia {
+        position: sticky !important;
+        top: 15vh !important;
+            .btnGuia {
+                color: $lightBoots;
+                margin-top: 3vh;
+            }
+        }
+    }
+    .textoGuia {
+        @include textMargin;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .textoGuia {
+        @include textMarginQuery;
     }
 }

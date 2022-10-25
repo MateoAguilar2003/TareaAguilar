@@ -2,3 +2,14 @@
     background: $gradient1 !important;
     background: $gradient2 !important;
 }
+
+@mixin textMargin {
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+@mixin textMarginQuery {
+    margin-left: 3vh !important;
+    margin-right: 3vh !important;
+
+}
